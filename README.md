@@ -1,0 +1,1 @@
+docker run -it -v /Users/vatadepalli/Desktop/kafka-sse-logger.nosync:/app  test bash
