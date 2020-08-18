@@ -18,6 +18,11 @@ RUN apt-get update && \
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
 RUN export JAVA_HOME
 
+EXPOSE 9092
+EXPOSE 2181
+
 COPY ./kafka/. /kafka
 
 WORKDIR /app
+
+CMD bash exec.sh
